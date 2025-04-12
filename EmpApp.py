@@ -6,15 +6,15 @@ from config import *
 
 app = Flask(__name__)
 
-bucket = custombucket
-region = customregion
+bucket = "zeew_employee"
+region = "us-east-1"
 
 db_conn = connections.Connection(
-    host=customhost,
+    host="employee.cmxmatz7ptif.us-east-1.rds.amazonaws.com",
     port=3306,
-    user=customuser,
-    password=custompass,
-    db=customdb
+    user="aws_user",
+    password="Aacs3253",
+    db="employee"
 
 )
 output = {}
