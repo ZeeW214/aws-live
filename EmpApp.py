@@ -6,7 +6,7 @@ from config import *
 
 app = Flask(__name__)
 
-bucket = "zeew_employee"
+bucket = "zeew-employee"
 region = "us-east-1"
 
 db_conn = connections.Connection(
